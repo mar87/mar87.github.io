@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking Engagements </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 28.125%; /* 16:9 aspect ratio at half width */
+            height: 0;
+            overflow: hidden;
+            max-width: 50%; /* half width */
+            margin: 0 auto; /* center the container */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold text-gray-800">MegRob Data Science and Analytics</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="services.html" class="text-gray-600 hover:text-gray-900">Services</a>
+                    <a href="speaking.html" class="text-gray-600 hover:text-gray-900">Speaking</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-gray-900">Blog</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <a href="index.html" class="block py-2 px-4 text-gray-600 hover:text-gray-900">Home</a>
+            <a href="services.html" class="block py-2 px-4 text-gray-600 hover:text-gray-900">Services</a>
+            <a href="speaking.html" class="block py-2 px-4 text-gray-600 hover:text-gray-900">Speaking</a>
+            <a href="blog.html" class="block py-2 px-4 text-gray-600 hover:text-gray-900">Blog</a>
+            <a href="contact.html" class="block py-2 px-4 text-gray-600 hover:text-gray-900">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Speaking Header -->
+    <section class="pt-24 pb-12 bg-gradient-to-r" style="background-image: linear-gradient(to right, oklch(70.4% 0.191 22.216), #a78bfa);">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
+                    Speaking Engagements
+                </h1>
+                <p class="mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Reach out to megan@megrobdatascience.com for speaking requests.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="speaking-card">
+                <div class="video-container">
+                    <img src="images/mind-the-gap.png" 
+                         alt="Mind the Gap: Tailoring Data Science for Stakeholder Success" 
+                         class="w-full h-full object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="text-center mt-4 mb-6">
+                    <a href="pdfs/mind-the-gap.pdf" class="inline-flex items-center text-brand hover:text-brand-dark" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Download Presentation Slides
+                    </a>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Mind the Gap: Tailoring Data Science for Stakeholder Success</h3>
+                    <p class="text-gray-600 mb-4">Boulder Women in Machine Learning and Data Science - May 2025</p>
+                    <p class="text-gray-700">  In order to make an impact as a data scientist in industry you need to share your work in an impactful manner. When working with a variety of stakeholders it is important to help them understand and correctly apply your recommendations. In this talk you will learn strategies to tailor your data science deliverables based on your stakeholders' abilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="speaking-card">
+                <div class="video-container">
+                    <div class="video-container">
+                        <img src="images/five-lessons.png" 
+                             alt="Top Five Lessons From a Senior Data Scientist" 
+                             class="w-full h-full object-cover rounded-lg shadow-lg">
+                    </div>
+                </div>
+                <div class="text-center mt-4 mb-6">
+                    <a href="pdfs/five-lessons.pdf" class="inline-flex items-center text-brand hover:text-brand-dark" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Download Presentation Slides
+                    </a>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Top Five Lessons From a Senior Data Scientist</h3>
+                    <p class="text-gray-600 mb-4">PyCon Lithuania - April 2025</p>
+                    <p class="text-gray-700"> A successful data scientist needs to have solid coding skills and stay up to date with the latest artificial intelligence and machine learning algorithms. However, there are many other skills and experiences that help you succeed in data science. In this talk Megan shares five of her most helpful career lessons she's learned in over eight years as a data scientist. These lessons will include tips on advocating for your own career development, how to collaborate with other teams and more. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="speaking-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VU--vFaQ3-Q" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="text-center mt-4 mb-6">
+                    <a href="pdfs/not-your-college-stats.pdf" class="inline-flex items-center text-brand hover:text-brand-dark" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Download Presentation Slides
+                    </a>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Not Your College Stats Course: Engaging Stakeholders Through Data Science</h3>
+                    <p class="text-gray-600 mb-4">NYR Conference - May 2025</p>
+                    <p class="text-gray-700">When working in industry data scientists must collaborate with colleagues across many different positions. You need to understand stakeholder needs and communicate results with non-technical teams. While you don't need to share the mathematical details, explaining analyses builds a stronger relationship with stakeholders and helps them to understand the data science process. How do you determine the best way to deliver results? What are some techniques you can use to break down data science techniques and algorithms? This talk will review methods to effectively share data science analysis and why it is important to stay aligned with stakeholders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="speaking-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/F3lC4qf84FI" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Creating Production Level Data Science Code</h3>
+                    <p class="text-gray-600 mb-4">NYR Conference </p>
+                    <p class="text-gray-700"> A data scientist writes code throughout every stage of a project from exploratory data analysis to evaluating models and summarizing results. Once you've developed a proof of concept or minimally viable product it can be a daunting task to put it into production. How do you organize and adapt all the code that you created? What can you do to make sure the code catches errors and alerts you to them? Do you feel overwhelmed by everything you need to do? By attending this presentation you will learn tips and strategies to organize your own code during a project to make creating production code easier. You will also learn how to optimize your code to catch errors and create effective documentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="speaking-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/yGQqBx2NHNg?si=j2J0AiTimbqnKx7U" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Ace the Data Science Interview</h3>
+                    <p class="text-gray-600 mb-4">Women in Data Science - UNC Charlotte </p>
+                    <p class="text-gray-700">  How do I prepare for the technical portion of an interview? What are the most important skills to highlight during my interview? I don't have any full-time work experience – what can I talk about to show that I'm a great fit for the role? How can I reduce my nerves? In this live virtual presentation, you will the learn skills and strategies to address these common interview stressors so that you can walk (or Zoom) into your next data science interview with confidence and poise.
+
+                        This talk will cover what one can expect from the data science interview process and how to prepare for the different types of questions that commonly occur. The presentation contains examples of these typical interview questions and will discuss ways to answer them so that you highlight your skills and experience. Your technical skills and training are not the only things that companies look for, and this talk will cover how you can discuss your experiences outside of data science to demonstrate other qualities that companies seek.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="speaking-card">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/hPrwgYNr2hQ?si=cMvI4QIUIJ2jUClm" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Exploring Data Science</h3>
+                    <p class="text-gray-600 mb-4">NYU Social Psychology Graduate Program </p>
+                    <p class="text-gray-700">  This talk summarizes the skills necessary to work as a data scientist. It includes information on a typcal day working in data science. </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800 pb-8">
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 MegRob Data Science and Analytics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
