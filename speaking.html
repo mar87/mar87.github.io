@@ -15,6 +15,10 @@
             max-width: 50%; /* half width */
             margin: 0 auto; /* center the container */
         }
+        .run-as-radio-image {
+            max-width: 75%;
+            padding-bottom: 42.1875%;
+        }
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -28,7 +32,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            object-position: center;
+            background-color: #dfeec5;
         }
     </style>
 </head>
@@ -77,6 +83,61 @@
                 <p class="mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
                     Reach out to megan@megrobdatascience.com for speaking requests.
                 </p>
+            </div>
+        </div>
+    </section>
+
+     <!-- Why Great Models Fail: Lessons From 9 Years of Deploying ML Models -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="speaking-card">
+                <div class="video-container run-as-radio-image">
+                    <img src="images/practical_statistics.png" 
+                         alt="Building Trustworthy Models: Practical Statistics Every Developer Should Know" 
+                         class="w-full h-full object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="text-center mt-4 mb-6">
+                    <a href="pdfs/building_trustworthy_models.pdf" class="inline-flex items-center text-brand hover:text-brand-dark" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        Download Presentation Slides
+                    </a>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Building Trustworthy Models: Practical Statistics Every Developer Should Know</h3>
+                    <p class="text-gray-600 mb-4">NDC Oslo - September 2026</p>
+                    <p class="text-gray-700"> Are you looking to transition into a machine learning engineer role, or are you currently building systems to support machine learning models but don’t understand how they work? This talk covers the practical statistics that can get you a long way in machine learning. </p>
+                    <br>
+                    <p class="text-gray-700"> It covers core concepts around model evaluation such as distributions, bias and variance, overfitting, evaluation metrics and more.
+
+Audience members can expect to learn statistical thinking through intuitive explanations and real-world examples that will empower them to avoid common mistakes, diagnose model issues and build machine learning systems you can trust. They will walk away with a basic tool kit to understand and improve the models your stakeholders rely on. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Run As Radio: How Machine Learning Fails -->
+    <section class="py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="speaking-card">
+                <div class="video-container run-as-radio-image">
+                    <img src="images/run_as_radio.png" 
+                         alt="Run As Radio: How Machine Learning Fails" 
+                         class="w-full h-full object-cover rounded-lg shadow-lg">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Run As Radio: How Machine Learning Fails</h3>
+                    <p class="text-gray-600 mb-4">Podcast feature</p>
+                    <p class="text-gray-700">A conversation with Richard Campbell about the real-world challenges of machine learning deployment, from model accuracy to organizational readiness and long-term operational success.</p>
+                    <br>
+                    <p class="text-gray-700">The discussion explores why even strong models can fail to create value when teams underestimate adoption barriers, monitoring gaps, and the realities of production environments.</p>
+                    <div class="mt-6">
+                        <a href="https://www.runasradio.com/Shows/Show/1040" class="inline-flex items-center text-brand hover:text-brand-dark font-semibold" target="_blank" rel="noopener noreferrer">
+                            Listen on Run As Radio
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
